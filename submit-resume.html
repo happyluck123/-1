@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>递交简历 - 支点联动</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 页面切换加载动画 -->
+    <div class="page-transition-overlay" id="pageTransition">
+        <div class="transition-content">
+            <h2 class="transition-logo">支点联动</h2>
+        </div>
+    </div>
+
+    <!-- 简约背景 -->
+    <div class="simple-background"></div>
+    
+    <!-- 动效背景 -->
+    <div class="resume-background-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+        <div class="floating-shape shape-6"></div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 class="logo-text">支点联动</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">服务项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="training.html" class="nav-link">人才培训</a>
+                </li>
+                <li class="nav-item">
+                    <a href="enterprise.html" class="nav-link">企业服务</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">联系我们</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 页面头部 -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content" data-aos="fade-up">
+                    <h1 class="page-title">递交简历</h1>
+                    <p class="page-subtitle">加入支点联动，开启您的AI职业生涯</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 简历递交区域 -->
+        <section class="resume-submission-section">
+            <div class="container">
+                <div class="submission-grid">
+                    <!-- 左侧：上传区域 -->
+                    <div class="upload-area" data-aos="fade-right">
+                        <div class="upload-container">
+                            <h2>上传您的简历</h2>
+                            <div class="file-upload-zone" id="fileUploadZone">
+                                <div class="upload-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7,10 12,15 17,10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                </div>
+                                <h3>拖拽文件到此处或点击上传</h3>
+                                <p>支持多种格式文件上传</p>
+                                <input type="file" id="resumeFile" accept=".pdf,.doc,.docx,.ppt,.pptx,.txt" style="display: none;">
+                                <button class="btn btn-primary upload-btn" onclick="document.getElementById('resumeFile').click()">选择文件</button>
+                            </div>
+                            
+                            <!-- 文件列表 -->
+                            <div class="uploaded-files" id="uploadedFiles" style="display: none;">
+                                <h3>已上传文件</h3>
+                                <div class="file-list" id="fileList"></div>
+                            </div>
+                            
+                            <!-- 提交按钮 -->
+                            <div class="submit-section">
+                                <button id="submitResumeBtn" class="btn btn-primary btn-large submit-resume-btn">
+                                    <span class="btn-text">提交简历</span>
+                                    <span class="btn-loading" style="display: none;">提交中...</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 右侧：使用说明 -->
+                    <div class="instructions-area" data-aos="fade-left">
+                        <div class="instructions-container">
+                            <h2>上传说明</h2>
+                            
+                            <div class="instruction-section">
+                                <h3>📄 支持的文件格式</h3>
+                                <div class="format-list">
+                                    <div class="format-item">
+                                        <span class="format-icon">📄</span>
+                                        <div class="format-info">
+                                            <h4>PDF文档</h4>
+                                            <p>.pdf - 推荐格式，兼容性最佳</p>
+                                        </div>
+                                    </div>
+                                    <div class="format-item">
+                                        <span class="format-icon">📝</span>
+                                        <div class="format-info">
+                                            <h4>Word文档</h4>
+                                            <p>.doc, .docx - 常用简历格式</p>
+                                        </div>
+                                    </div>
+                                    <div class="format-item">
+                                        <span class="format-icon">📊</span>
+                                        <div class="format-info">
+                                            <h4>PPT演示</h4>
+                                            <p>.ppt, .pptx - 作品集展示</p>
+                                        </div>
+                                    </div>
+                                    <div class="format-item">
+                                        <span class="format-icon">📃</span>
+                                        <div class="format-info">
+                                            <h4>文本文档</h4>
+                                            <p>.txt - 纯文本格式</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="instruction-section">
+                                <h3>📋 简历内容要求</h3>
+                                <ul class="requirement-list">
+                                    <li>
+                                        <span class="req-icon">✓</span>
+                                        <strong>完整的联系方式</strong> - 包括姓名、手机号、邮箱地址
+                                    </li>
+                                    <li>
+                                        <span class="req-icon">✓</span>
+                                        <strong>教育背景</strong> - 学历、专业、毕业院校及时间
+                                    </li>
+                                    <li>
+                                        <span class="req-icon">✓</span>
+                                        <strong>工作经历</strong> - 详细的工作经验和项目经历
+                                    </li>
+                                    <li>
+                                        <span class="req-icon">✓</span>
+                                        <strong>技能证书</strong> - 相关技能和资格证书
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="instruction-section">
+                                <h3>💡 上传注意事项</h3>
+                                <div class="tips-list">
+                                    <div class="tip-item">
+                                        <span class="tip-number">1</span>
+                                        <p>文件大小不超过10MB</p>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-number">2</span>
+                                        <p>确保联系方式准确无误</p>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-number">3</span>
+                                        <p>简历内容真实有效</p>
+                                    </div>
+                                    <div class="tip-item">
+                                        <span class="tip-number">4</span>
+                                        <p>我们会在3个工作日内回复</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>支点联动</h3>
+                    <p>智见未来  联动万象</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">服务项目</a></li>
+                        <li><a href="training.html">人才培训</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>电话：400-123-4567</p>
+                    <p>邮箱：info@zhidianliandong.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 支点联动科技有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // 文件上传功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const fileUploadZone = document.getElementById('fileUploadZone');
+            const fileInput = document.getElementById('resumeFile');
+            const uploadedFiles = document.getElementById('uploadedFiles');
+            const fileList = document.getElementById('fileList');
+            const submitBtn = document.getElementById('submitResumeBtn');
+            
+            let uploadedFilesList = [];
+            
+            // 拖拽上传
+            fileUploadZone.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                fileUploadZone.classList.add('dragover');
+            });
+            
+            fileUploadZone.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                fileUploadZone.classList.remove('dragover');
+            });
+            
+            fileUploadZone.addEventListener('drop', function(e) {
+                e.preventDefault();
+                fileUploadZone.classList.remove('dragover');
+                const files = e.dataTransfer.files;
+                handleFiles(files);
+            });
+            
+            // 文件选择
+            fileInput.addEventListener('change', function(e) {
+                handleFiles(e.target.files);
+            });
+            
+            // 处理文件
+            function handleFiles(files) {
+                for (let file of files) {
+                    if (validateFile(file)) {
+                        uploadedFilesList.push(file);
+                        addFileToList(file);
+                    }
+                }
+                
+                if (uploadedFilesList.length > 0) {
+                    uploadedFiles.style.display = 'block';
+                }
+            }
+            
+            // 验证文件
+            function validateFile(file) {
+                const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'text/plain'];
+                const maxSize = 10 * 1024 * 1024; // 10MB
+                
+                if (!allowedTypes.includes(file.type)) {
+                    alert('不支持的文件格式，请上传PDF、Word、PPT或TXT文件');
+                    return false;
+                }
+                
+                if (file.size > maxSize) {
+                    alert('文件大小超过10MB限制');
+                    return false;
+                }
+                
+                return true;
+            }
+            
+            // 添加文件到列表
+            function addFileToList(file) {
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                fileItem.innerHTML = `
+                    <div class="file-info">
+                        <span class="file-name">${file.name}</span>
+                        <span class="file-size">${(file.size / 1024 / 1024).toFixed(2)} MB</span>
+                    </div>
+                    <button class="remove-file" onclick="removeFile('${file.name}')">×</button>
+                `;
+                fileList.appendChild(fileItem);
+            }
+            
+            // 移除文件
+            window.removeFile = function(fileName) {
+                uploadedFilesList = uploadedFilesList.filter(file => file.name !== fileName);
+                const fileItems = fileList.querySelectorAll('.file-item');
+                fileItems.forEach(item => {
+                    if (item.querySelector('.file-name').textContent === fileName) {
+                        item.remove();
+                    }
+                });
+                
+                if (uploadedFilesList.length === 0) {
+                    uploadedFiles.style.display = 'none';
+                }
+            };
+            
+            // 简历提交
+            submitBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (uploadedFilesList.length === 0) {
+                    alert('请先上传简历文件');
+                    return;
+                }
+                
+                const btnText = submitBtn.querySelector('.btn-text');
+                const btnLoading = submitBtn.querySelector('.btn-loading');
+                
+                // 显示加载状态
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline';
+                submitBtn.disabled = true;
+                
+                // 模拟提交
+                setTimeout(() => {
+                    alert('简历提交成功！我们会在3个工作日内与您联系。');
+                    uploadedFilesList = [];
+                    fileList.innerHTML = '';
+                    uploadedFiles.style.display = 'none';
+                    fileInput.value = '';
+                    
+                    // 恢复按钮状态
+                    btnText.style.display = 'inline';
+                    btnLoading.style.display = 'none';
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html> 

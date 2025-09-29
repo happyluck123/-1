@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人才培训 - 支点联动</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 页面切换加载动画 -->
+    <div class="page-transition-overlay" id="pageTransition">
+        <div class="transition-content">
+            <h2 class="transition-logo">支点联动</h2>
+        </div>
+    </div>
+
+    <!-- 简约背景 -->
+    <div class="simple-background"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 class="logo-text">支点联动</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">服务项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="training.html" class="nav-link active">人才培训</a>
+                </li>
+                <li class="nav-item">
+                    <a href="enterprise.html" class="nav-link">企业服务</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">联系我们</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 页面头部 -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content" data-aos="fade-up">
+                    <h1 class="page-title">AI人才培训</h1>
+                    <p class="page-subtitle">培养未来AI领域的专业人才，开启您的AI职业之路</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 培训优势 -->
+        <section class="training-advantages">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">为什么选择我们的培训</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="advantage-icon">
+                            <div class="icon-glow"></div>
+                            <span>🎯</span>
+                        </div>
+                        <h3>实战导向</h3>
+                        <p>基于真实项目的学习模式，让理论知识在实践中得到验证和应用</p>
+                        <div class="advantage-stats">
+                            <span class="stat-highlight">100+</span>
+                            <span class="stat-desc">实战项目</span>
+                        </div>
+                    </div>
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="advantage-icon">
+                            <div class="icon-glow"></div>
+                            <span>👨‍🏫</span>
+                        </div>
+                        <h3>导师制培养</h3>
+                        <p>每位学员配备专属导师，提供个性化指导和职业规划建议</p>
+                        <div class="advantage-stats">
+                            <span class="stat-highlight">1:5</span>
+                            <span class="stat-desc">师生比例</span>
+                        </div>
+                    </div>
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="advantage-icon">
+                            <div class="icon-glow"></div>
+                            <span>🏆</span>
+                        </div>
+                        <h3>就业保障</h3>
+                        <p>完善的就业推荐体系，与众多知名企业建立人才输送合作关系</p>
+                        <div class="advantage-stats">
+                            <span class="stat-highlight">95%</span>
+                            <span class="stat-desc">就业率</span>
+                        </div>
+                    </div>
+                    <div class="advantage-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="advantage-icon">
+                            <div class="icon-glow"></div>
+                            <span>📚</span>
+                        </div>
+                        <h3>终身学习</h3>
+                        <p>提供持续的技术更新和进阶课程，保持技能的时效性和竞争力</p>
+                        <div class="advantage-stats">
+                            <span class="stat-highlight">终身</span>
+                            <span class="stat-desc">免费更新</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 课程体系 -->
+        <section class="course-system">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">完整的课程体系</h2>
+                <div class="course-path">
+                    <div class="course-level" data-aos="slide-right" data-aos-delay="100">
+                        <div class="level-header">
+                            <div class="level-number">01</div>
+                            <div class="level-info">
+                                <h3>基础阶段</h3>
+                                <p>夯实编程和数学基础</p>
+                                <span class="duration">4周</span>
+                            </div>
+                        </div>
+                        <div class="level-content">
+                            <div class="course-modules">
+                                <div class="module">
+                                    <h4>Python编程基础</h4>
+                                    <ul>
+                                        <li>语法基础与数据结构</li>
+                                        <li>面向对象编程</li>
+                                        <li>常用库的使用</li>
+                                    </ul>
+                                </div>
+                                <div class="module">
+                                    <h4>数学基础</h4>
+                                    <ul>
+                                        <li>线性代数</li>
+                                        <li>概率论与统计学</li>
+                                        <li>微积分基础</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-level" data-aos="slide-left" data-aos-delay="200">
+                        <div class="level-header">
+                            <div class="level-number">02</div>
+                            <div class="level-info">
+                                <h3>核心阶段</h3>
+                                <p>掌握机器学习核心技术</p>
+                                <span class="duration">8周</span>
+                            </div>
+                        </div>
+                        <div class="level-content">
+                            <div class="course-modules">
+                                <div class="module">
+                                    <h4>机器学习算法</h4>
+                                    <ul>
+                                        <li>监督学习算法</li>
+                                        <li>无监督学习算法</li>
+                                        <li>集成学习方法</li>
+                                    </ul>
+                                </div>
+                                <div class="module">
+                                    <h4>深度学习基础</h4>
+                                    <ul>
+                                        <li>神经网络原理</li>
+                                        <li>TensorFlow/PyTorch</li>
+                                        <li>模型训练与优化</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-level" data-aos="slide-right" data-aos-delay="300">
+                        <div class="level-header">
+                            <div class="level-number">03</div>
+                            <div class="level-info">
+                                <h3>专业阶段</h3>
+                                <p>深入专业领域应用</p>
+                                <span class="duration">8周</span>
+                            </div>
+                        </div>
+                        <div class="level-content">
+                            <div class="course-modules">
+                                <div class="module">
+                                    <h4>计算机视觉</h4>
+                                    <ul>
+                                        <li>图像处理与识别</li>
+                                        <li>目标检测</li>
+                                        <li>图像生成技术</li>
+                                    </ul>
+                                </div>
+                                <div class="module">
+                                    <h4>自然语言处理</h4>
+                                    <ul>
+                                        <li>文本分析与挖掘</li>
+                                        <li>语言模型</li>
+                                        <li>对话系统开发</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-level" data-aos="slide-left" data-aos-delay="400">
+                        <div class="level-header">
+                            <div class="level-number">04</div>
+                            <div class="level-info">
+                                <h3>实战阶段</h3>
+                                <p>完成端到端项目开发</p>
+                                <span class="duration">4周</span>
+                            </div>
+                        </div>
+                        <div class="level-content">
+                            <div class="course-modules">
+                                <div class="module">
+                                    <h4>项目实战</h4>
+                                    <ul>
+                                        <li>需求分析与设计</li>
+                                        <li>模型开发与优化</li>
+                                        <li>部署与产品化</li>
+                                    </ul>
+                                </div>
+                                <div class="module">
+                                    <h4>职业规划</h4>
+                                    <ul>
+                                        <li>简历包装</li>
+                                        <li>面试技巧</li>
+                                        <li>职业发展指导</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学习模式 -->
+        <section class="learning-modes">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">灵活的学习模式</h2>
+                <div class="modes-grid">
+                    <div class="mode-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="mode-icon">
+                            <span>🏫</span>
+                        </div>
+                        <h3>线下集训营</h3>
+                        <div class="mode-features">
+                            <div class="feature">✓ 面对面教学</div>
+                            <div class="feature">✓ 小班制授课</div>
+                            <div class="feature">✓ 实地项目演练</div>
+                            <div class="feature">✓ 同伴学习氛围</div>
+                        </div>
+                        <div class="mode-price">
+                            <span class="price">¥19,800</span>
+                            <span class="period">/ 6个月</span>
+                        </div>
+                        <button class="btn btn-primary">立即报名</button>
+                    </div>
+                    <div class="mode-card featured" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="featured-badge">推荐</div>
+                        <div class="mode-icon">
+                            <span>💻</span>
+                        </div>
+                        <h3>在线直播课</h3>
+                        <div class="mode-features">
+                            <div class="feature">✓ 实时互动教学</div>
+                            <div class="feature">✓ 录播回放复习</div>
+                            <div class="feature">✓ 在线答疑服务</div>
+                            <div class="feature">✓ 灵活时间安排</div>
+                        </div>
+                        <div class="mode-price">
+                            <span class="price">¥12,800</span>
+                            <span class="period">/ 6个月</span>
+                        </div>
+                        <button class="btn btn-primary">立即报名</button>
+                    </div>
+                    <div class="mode-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="mode-icon">
+                            <span>📱</span>
+                        </div>
+                        <h3>自主学习</h3>
+                        <div class="mode-features">
+                            <div class="feature">✓ 完全自主安排</div>
+                            <div class="feature">✓ 海量学习资源</div>
+                            <div class="feature">✓ 在线作业系统</div>
+                            <div class="feature">✓ 社群支持服务</div>
+                        </div>
+                        <div class="mode-price">
+                            <span class="price">¥6,800</span>
+                            <span class="period">/ 不限时</span>
+                        </div>
+                        <button class="btn btn-primary">立即报名</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 导师团队 -->
+        <section class="instructor-team">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">资深导师团队</h2>
+                <div class="instructors-grid">
+                    <div class="instructor-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="instructor-avatar">
+                            <div class="avatar-image">👨‍💻</div>
+                        </div>
+                        <div class="instructor-info">
+                            <h3>张教授</h3>
+                            <p class="title">机器学习专家</p>
+                            <div class="credentials">
+                                <span class="credential">清华大学博士</span>
+                                <span class="credential">15年行业经验</span>
+                            </div>
+                            <p class="description">
+                                前百度高级算法工程师，专注于深度学习和计算机视觉领域，发表顶级论文50+篇。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="instructor-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="instructor-avatar">
+                            <div class="avatar-image">👩‍🔬</div>
+                        </div>
+                        <div class="instructor-info">
+                            <h3>李博士</h3>
+                            <p class="title">NLP技术专家</p>
+                            <div class="credentials">
+                                <span class="credential">斯坦福大学博士</span>
+                                <span class="credential">12年研发经验</span>
+                            </div>
+                            <p class="description">
+                                前谷歌资深研究员，自然语言处理领域权威专家，多项NLP技术专利持有者。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="instructor-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="instructor-avatar">
+                            <div class="avatar-image">👨‍🎓</div>
+                        </div>
+                        <div class="instructor-info">
+                            <h3>王工程师</h3>
+                            <p class="title">AI工程化专家</p>
+                            <div class="credentials">
+                                <span class="credential">中科院硕士</span>
+                                <span class="credential">10年实战经验</span>
+                            </div>
+                            <p class="description">
+                                前阿里巴巴技术专家，专注于AI模型的工程化部署和产品化落地。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学员故事 -->
+        <section class="student-stories">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">学员成功故事</h2>
+                <div class="stories-grid">
+                    <div class="story-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="story-avatar">
+                            <div class="avatar-placeholder">👨‍💼</div>
+                        </div>
+                        <div class="story-content">
+                            <h3>从销售到AI工程师</h3>
+                            <p class="student-name">— 李明，现任某独角兽公司AI工程师</p>
+                            <blockquote>
+                                "从零基础到成功转型AI工程师，支点联动的培训让我在6个月内完成了职业生涯的华丽转身。
+                                专业的课程体系和导师的悉心指导，让我不仅掌握了技术，更重要的是建立了正确的学习方法。"
+                            </blockquote>
+                            <div class="story-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">薪资涨幅</span>
+                                    <span class="stat-value">200%</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">学习时间</span>
+                                    <span class="stat-value">6个月</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="story-avatar">
+                            <div class="avatar-placeholder">👩‍💻</div>
+                        </div>
+                        <div class="story-content">
+                            <h3>应届生的AI梦想</h3>
+                            <p class="student-name">— 张小雨，现任头部科技公司算法工程师</p>
+                            <blockquote>
+                                "作为计算机专业的应届生，我在这里学到的不仅是技术知识，更是解决实际问题的能力。
+                                项目实战的经验让我在求职过程中脱颖而出，成功进入了梦想的公司。"
+                            </blockquote>
+                            <div class="story-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">起薪水平</span>
+                                    <span class="stat-value">30W+</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">offer数量</span>
+                                    <span class="stat-value">5个</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="story-avatar">
+                            <div class="avatar-placeholder">👨‍🚀</div>
+                        </div>
+                        <div class="story-content">
+                            <h3>传统工程师的转型</h3>
+                            <p class="student-name">— 王强，现自主创业AI公司CEO</p>
+                            <blockquote>
+                                "有着10年传统软件开发经验的我，通过这里的学习成功转型AI领域，
+                                并创立了自己的AI创业公司。专业的培训和创业指导让我的转型之路更加顺畅。"
+                            </blockquote>
+                            <div class="story-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">创业融资</span>
+                                    <span class="stat-value">500万</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">团队规模</span>
+                                    <span class="stat-value">15人</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">常见问题</h2>
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question">
+                            <h3>零基础能学会吗？</h3>
+                            <div class="faq-toggle">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>完全可以！我们的课程从基础编程开始，循序渐进。配备专业导师一对一指导，确保每位学员都能跟上学习进度。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question">
+                            <h3>学习周期多长？</h3>
+                            <div class="faq-toggle">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>标准课程为6个月，包含24周的系统学习。我们也提供灵活的学习计划，可根据个人时间安排调整学习节奏。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="faq-question">
+                            <h3>就业保障如何？</h3>
+                            <div class="faq-toggle">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我们与500+企业建立合作关系，提供就业推荐服务。学员就业率达95%以上，平均薪资提升幅度为150%-300%。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="faq-question">
+                            <h3>课程费用包含什么？</h3>
+                            <div class="faq-toggle">+</div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>课程费用包含所有学习资料、项目实战、导师指导、就业服务，以及终身的技术更新和进阶课程免费访问权限。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 立即报名 -->
+        <section class="enrollment-cta">
+            <div class="container">
+                <div class="cta-content" data-aos="fade-up">
+                    <h2>开启您的AI职业之路</h2>
+                    <p>加入我们，成为AI时代的专业人才</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-large">立即报名</button>
+                        <button class="btn btn-secondary btn-large">免费试听</button>
+                    </div>
+                    <div class="contact-info">
+                        <p>📞 咨询热线：400-123-4567</p>
+                        <p>💬 微信咨询：zhidianliandong</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>支点联动</h3>
+                    <p>智见未来  联动万象</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">服务项目</a></li>
+                        <li><a href="training.html">人才培训</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>电话：400-123-4567</p>
+                    <p>邮箱：info@zhidianliandong.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 支点联动科技有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // FAQ 交互功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+                
+                question.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    
+                    // 关闭所有其他FAQ项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-toggle').textContent = '+';
+                        }
+                    });
+                    
+                    // 切换当前项
+                    if (isActive) {
+                        item.classList.remove('active');
+                        toggle.textContent = '+';
+                    } else {
+                        item.classList.add('active');
+                        toggle.textContent = '−';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

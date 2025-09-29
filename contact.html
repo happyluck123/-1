@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 支点联动</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 页面切换加载动画 -->
+    <div class="page-transition-overlay" id="pageTransition">
+        <div class="transition-content">
+            <h2 class="transition-logo">支点联动</h2>
+        </div>
+    </div>
+
+    <!-- 简约背景 -->
+    <div class="simple-background"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 class="logo-text">支点联动</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">服务项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="training.html" class="nav-link">人才培训</a>
+                </li>
+                <li class="nav-item">
+                    <a href="enterprise.html" class="nav-link">企业服务</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">联系我们</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 页面头部 -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content" data-aos="fade-up">
+                    <h1 class="page-title">联系我们</h1>
+                    <p class="page-subtitle">随时为您提供专业的AI咨询和服务支持</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-methods" data-aos="fade-right">
+                        <h2>多种联系方式</h2>
+                        <p class="contact-intro">
+                            我们提供多种便捷的联系方式，无论您有任何疑问或需求，
+                            我们的专业团队都会第一时间为您提供解答和支持。
+                        </p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <span>📞</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>客服热线</h3>
+                                    <p>400-123-4567</p>
+                                    <span class="contact-note">工作日 9:00-18:00</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <span>📧</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>邮箱联系</h3>
+                                    <p>info@zhidianliandong.com</p>
+                                    <span class="contact-note">24小时内回复</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <span>💬</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>微信咨询</h3>
+                                    <p>zhidianliandong</p>
+                                    <span class="contact-note">扫码添加专属顾问</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <span>📍</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>公司地址</h3>
+                                    <p>北京市海淀区中关村软件园</p>
+                                    <span class="contact-note">欢迎预约实地参观</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>关注我们</h3>
+                            <div class="social-icons">
+                                <div class="social-icon">
+                                    <span>📱</span>
+                                    <p>微信公众号</p>
+                                </div>
+                                <div class="social-icon">
+                                    <span>📺</span>
+                                    <p>视频号</p>
+                                </div>
+                                <div class="social-icon">
+                                    <span>🎵</span>
+                                    <p>抖音</p>
+                                </div>
+                                <div class="social-icon">
+                                    <span>📝</span>
+                                    <p>知乎</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section" data-aos="fade-left">
+                        <div class="form-container">
+                            <h2>在线咨询</h2>
+                            <p>填写下方表单，我们会尽快与您取得联系</p>
+                            
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">姓名 *</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">手机号 *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">邮箱</label>
+                                        <input type="email" id="email" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="company">公司名称</label>
+                                        <input type="text" id="company" name="company">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="service">感兴趣的服务 *</label>
+                                    <select id="service" name="service" required>
+                                        <option value="">请选择服务类型</option>
+                                        <option value="training">AI人才培训</option>
+                                        <option value="enterprise">企业AI解决方案</option>
+                                        <option value="content">内容生成服务</option>
+                                        <option value="consulting">AI技术咨询</option>
+                                        <option value="other">其他服务</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">详细需求 *</label>
+                                    <textarea id="message" name="message" rows="5" placeholder="请详细描述您的需求，我们会为您提供专业的建议..." required></textarea>
+                                </div>
+                                
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="privacy" name="privacy" required>
+                                        <span class="checkmark"></span>
+                                        我已阅读并同意<a href="#" class="privacy-link">隐私政策</a>
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-large submit-btn">
+                                    <span class="btn-text">提交咨询</span>
+                                    <span class="btn-loading" style="display: none;">提交中...</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 地图位置 -->
+        <section class="location-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">我们的位置</h2>
+                <div class="location-content">
+                    <div class="location-info" data-aos="fade-right">
+                        <h3>北京总部</h3>
+                        <div class="address-details">
+                            <p><strong>地址：</strong>北京市海淀区中关村软件园二期</p>
+                            <p><strong>邮编：</strong>100190</p>
+                            <p><strong>交通：</strong>地铁16号线马连洼站，步行10分钟</p>
+                        </div>
+                        
+                        <div class="office-hours">
+                            <h4>办公时间</h4>
+                            <div class="hours-grid">
+                                <div class="hours-item">
+                                    <span class="day">周一至周五</span>
+                                    <span class="time">9:00 - 18:00</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">周六</span>
+                                    <span class="time">10:00 - 16:00</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">周日</span>
+                                    <span class="time">预约制</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="visit-note">
+                            <p>💡 <strong>温馨提示：</strong>为了更好地为您服务，建议您提前预约访问时间</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container" data-aos="fade-left">
+                        <div class="map-placeholder">
+                            <div class="map-content">
+                                <div class="map-icon">🗺️</div>
+                                <h3>在线地图</h3>
+                                <p>点击查看详细位置信息</p>
+                                <button class="btn btn-secondary">查看地图</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="contact-faq">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">常见问题</h2>
+                <div class="faq-columns">
+                    <div class="faq-column" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-item">
+                            <h3>如何预约咨询？</h3>
+                            <p>您可以通过电话、邮箱或在线表单预约咨询，我们会在24小时内回复您。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>是否提供免费咨询？</h3>
+                            <p>是的，我们为所有客户提供免费的初步咨询服务，帮助您了解我们的服务内容。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>咨询服务的范围？</h3>
+                            <p>涵盖AI人才培训、企业解决方案、技术咨询、项目规划等全方位服务。</p>
+                        </div>
+                    </div>
+                    <div class="faq-column" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-item">
+                            <h3>响应时间多长？</h3>
+                            <p>工作日内我们会在4小时内回复，紧急事务可直接拨打客服热线。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>支持远程服务吗？</h3>
+                            <p>是的，我们支持线上远程咨询和服务，为全国客户提供便捷服务。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>如何保护隐私？</h3>
+                            <p>我们严格遵守隐私保护政策，确保您的个人信息和商业机密安全。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行动号召 -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content" data-aos="fade-up">
+                    <h2>开始您的AI之旅</h2>
+                    <p>无论您是个人学习者还是企业决策者，我们都随时准备为您提供专业的AI解决方案</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-large">立即咨询</button>
+                        <button class="btn btn-secondary btn-large">预约访问</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>支点联动</h3>
+                    <p>智见未来  联动万象</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">服务项目</a></li>
+                        <li><a href="training.html">人才培训</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>电话：400-123-4567</p>
+                    <p>邮箱：info@zhidianliandong.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 支点联动科技有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // 表单提交处理
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const submitBtn = form.querySelector('.submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // 显示加载状态
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline';
+                submitBtn.disabled = true;
+                
+                // 模拟表单提交
+                setTimeout(() => {
+                    alert('感谢您的咨询！我们会在24小时内与您取得联系。');
+                    form.reset();
+                    
+                    // 恢复按钮状态
+                    btnText.style.display = 'inline';
+                    btnLoading.style.display = 'none';
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+            
+            // 表单验证
+            const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+            inputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    if (!this.value.trim()) {
+                        this.classList.add('error');
+                    } else {
+                        this.classList.remove('error');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
